@@ -11,9 +11,11 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome icon -->
+    <script src="https://kit.fontawesome.com/08a0a3c52e.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <header class="bg-[#F9F6E2] pb-10  md:px-10 lg:px-16 md:py-10 lg:px-16">
+    <header class="bg-[#F9F6E2] pb-10 md:px-10 lg:px-16 md:py-10 lg:px-16">
       <div
         class="container mx-auto flex gap-6 md:gap-8 lg:gap-10 flex-col md:flex-row-reverse items-center justify-center"
       >
@@ -23,25 +25,64 @@
         </div>
         <!-- text div -->
         <div class="flex-1 text-center">
-          <p class="text-xl md:text-2xl lg:text-3xl text-[#111] mb-4 md:mb-6 lg:mb-11">---SALE FEVER---</p>
-          <h1 class="mb-8 md:mb-12 lg:mb-20 text-3xl md:text-4xl lg:text-6xl font-bold text-[#111]">
+          <p
+            class="text-xl md:text-2xl lg:text-3xl text-[#111] mb-4 md:mb-6 lg:mb-11"
+          >
+            ---SALE FEVER---
+          </p>
+          <h1
+            class="mb-8 md:mb-12 lg:mb-20 text-3xl md:text-4xl lg:text-6xl font-bold text-[#111]"
+          >
             Purchase TK 200 or <br />
             above & get <span class="text-[#E527B2]">20% off</span>
           </h1>
           <p class="text-[#111] text-lg md:text-xl lg:text-2xl font-semibold">
-            Use Promo Code <span class="ms-3 md:ms-4 lg:ms-6 px-4 md:px-6 py-2 md:py-3 cursor-pointer rounded-xl bg-[#E527B2] text-[#FFF]">SELL200</span>
+            Use Promo Code
+            <span
+              class="ms-3 md:ms-4 lg:ms-6 px-4 md:px-6 py-2 md:py-3 cursor-pointer rounded-xl bg-[#E527B2] text-[#FFF]"
+              >SELL200</span
+            >
           </p>
         </div>
       </div>
     </header>
     <main>
-      <section>
+      <section class="bg-[#F8F8F8]">
         <!-- main container -->
-        <div>
+        <div
+          class="flex flex-col md:flex-row items-center justify-center lg:px-20 lg:py-20"
+        >
           <!-- item card section -->
-          <div></div>
+          <div class="w-[70%] ">
+            <h2 class="text-4xl font-semibold mb-8">Kitchenware</h2>
+            <div
+              class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+            >
+                        <!-- card 1 -->
+              <div onclick="clickhandler(this)" class="card bg-base-100 p-6 shadow-xl">
+                <figure class="px-10 py-8 bg-[#F8F8F8]">
+                  <img
+                    src="./images/prod1.png"
+                    alt="product"
+                    class="rounded-xl"
+                  />
+                </figure>
+                <div class="flex flex-col items-center justify-center pt-3">
+                    <div>
+                        <i class="fa-solid fa-star" style="color: #ffc107;"></i>
+                        <i class="fa-solid fa-star" style="color: #ffc107;"></i>
+                        <i class="fa-solid fa-star" style="color: #ffc107;"></i>
+                        <i class="fa-regular fa-star" style="color: #ffc107;"></i>
+                        <i class="fa-regular fa-star" style="color: #ffc107;"></i>
+                    </div>
+                  <h2 class="card-title my-2">K. Accessories</h2>
+                  <p class="text-xl text-[#888888]"><span>39.00</span> TK</p>
+                </div>
+              </div>
+            </div>
+          </div>
           <!-- product cart calculation -->
-          <div></div>
+          <div class="w-[30%] bd-indigo-300"></div>
         </div>
       </section>
     </main>
