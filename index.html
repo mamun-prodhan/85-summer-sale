@@ -299,19 +299,20 @@
             </div>
           </div>
           <!-- product cart calculation -->
-          <div class="w-full lg:w-[30%] bd-indigo-300">
+          <div class="w-full lg:w-[30%] bd-indigo-300 mb-8 lg:mb-0">
             <div class="mt-0 lg:mt-[136px] p-6 bg-[#FFFFFF] rounded-lg">
-              <h2 class="text-2xl font-semibold mb-3">Have coupon?</h2>
+              <h2 class="text-xl md:text-2xl font-semibold mb-3">Have coupon?</h2>
               <input
                 id="coupon-field"
                 class="ps-4 py-2 m-0 border-s border-t border-b border-[#a0a0a0] rounded-s-lg"
                 type="text"
+                placeholder="Coupon Code"
               />
               <button
               id="btn-apply"
               onclick="discountHandler()"
               disabled
-                class="text-xl font-semibold -m-1 px-4 py-2 text-[#FFFFFF] bg-[#ff94e3] rounded-r-lg"
+                class="text-lg md:text-xl font-semibold -m-1 px-4 py-2 text-[#FFFFFF] bg-[#ff94e3] rounded-r-lg"
               >
                 Apply
               </button>
@@ -334,7 +335,7 @@
                     <form method="dialog" class="modal-box">
                         <img class="mx-auto" src="./images/congo.png" alt="congratulation">
                       <h3 class="font-bold text-center mt-2 text-2xl">Congratulations</h3>
-                      <p class="py-2 text-center text-[#888888]">Your Purchase the product</p>
+                      <p class="py-2 text-center text-[#888888]">You Purchase the product</p>
                       <div class="modal-action ">
                         <!-- if there is a button in form, it will close the modal -->
                         <button onclick="modal()" class="btn mx-auto bg-[#E527B2] hover:bg-[#ca0094] text-[#FFFFFF]">Go Home</button>

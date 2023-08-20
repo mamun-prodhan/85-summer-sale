@@ -37,6 +37,8 @@ function clickhandler(target){
 function discountHandler(){
     // get the coupon code
     const couponCode = document.getElementById('coupon-field').value;
+    // reset the input
+    document.getElementById('coupon-field').value = '';
     // check the coupon code
     if(couponCode === 'SELL200'){
     // get the Previous total price
