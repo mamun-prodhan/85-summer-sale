@@ -35,7 +35,23 @@ function clickhandler(target){
 }
 
 function discountHandler(){
-
+    // get the coupon code
+    const couponCode = document.getElementById('coupon-field').value;
+    // check the coupon code
+    if(couponCode === 'SELL200'){
+    // get the Previous total price
+    const totalPrice = parseFloat(document.getElementById('total-price').innerText);
+    // calculate discount
+    const discount = ((totalPrice * 20)/100).toFixed(2);
+    // set discount
+    document.getElementById('discount-amount').innerText = discount;
+    // calculate and set final total
+    const finalGrandTotal = (totalPrice - discount).toFixed(2);
+    document.getElementById('total-amount').innerText = finalGrandTotal;
+    }
+    else{
+        alert('Invalid Coupon');
+    }
 }
 
 
