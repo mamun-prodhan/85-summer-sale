@@ -329,7 +329,18 @@
                 <p class="my-3 text-xl font-semibold ">Discount: <span class="text-[#888888]"><span id="discount-amount">0.00</span> TK</span></p>
                 <p class="text-xl font-semibold">Total: <span class="text-[#888888]"><span id="total-amount">0.00</span> TK</span></p>
                 <hr class="mt-4">
-                <button id="btn-purchase" disabled class="mt-6 text-xl font-bold text-center w-full py-4 rounded-xl text-[#FFFFFF] bg-[#ff94e3]">Make Purchase</button>
+                <button id="btn-purchase" onclick="my_modal_5.showModal()" disabled class="mt-6 text-xl font-bold text-center w-full py-4 rounded-xl text-[#FFFFFF] bg-[#ff94e3]">Make Purchase</button>
+                <dialog id="my_modal_5" class="modal modal-middle">
+                    <form method="dialog" class="modal-box">
+                        <img class="mx-auto" src="./images/congo.png" alt="congratulation">
+                      <h3 class="font-bold text-center mt-2 text-2xl">Congratulations</h3>
+                      <p class="py-2 text-center text-[#888888]">Your Purchase the product</p>
+                      <div class="modal-action ">
+                        <!-- if there is a button in form, it will close the modal -->
+                        <button onclick="modal()" class="btn mx-auto bg-[#E527B2] hover:bg-[#ca0094] text-[#FFFFFF]">Go Home</button>
+                      </div>
+                    </form>
+                  </dialog>
               </div>
             </div>
           </div>

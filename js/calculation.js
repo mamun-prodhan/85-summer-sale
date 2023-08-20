@@ -54,6 +54,10 @@ function discountHandler(){
     }
 }
 
+function modal(){
+    window.location.href = 'index.html';
+}
+
 
 
 
